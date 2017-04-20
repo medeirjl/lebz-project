@@ -1,11 +1,11 @@
 .flip {
-    height: 300px;
+    height: 350px;
     width: 300px;
-    margin: 0 auto;
+    margin: 100px;
 }
 .flip img {
-    width: 300px;
     height: auto;
+    width: 300px;
 }
 .flip .back {
     background: #2184cd;
