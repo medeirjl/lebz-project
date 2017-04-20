@@ -1,9 +1,17 @@
+.lineups {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .flip {
-    height: 350px;
+    height: 420px;
     width: 300px;
-    margin: 100px;
+    margin: 10px;
     float: left;
-
+    display: block;
+}
+.flip.square {
+    height: 300px;
 }
 .flip img {
     height: auto;
@@ -30,7 +38,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1024px;
     padding: 2em 2em 4em;
 }
 
