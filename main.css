@@ -20,25 +20,56 @@
     width: 300px;
 }
 .flip .back {
-    background: #2184cd;
+    background: #dddddd;
     color: #fff;
     text-align: center;
 }
 
-.panel-group {
+.intro {
     margin-bottom: 40px;
 }
 
+nav {
+    margin-bottom: 40px;
+}
+
+nav a h4 {
+    background-color: #aaaaaa;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin: 5px auto;
+}
+
+nav a h4:hover {
+    background-color: black;
+    transition-duration: .7s;
+}
+
+.region-panel {
+    margin-bottom: 80px;
+    border-bottom: 2px solid #aaaaaa;
+}
+
+.panel-title {
+    text-align: center;
+}
+
 html {
-    background: greenyellow;
+    background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center top;
     -webkit-font-smoothing: antialiased;
+    	background-attachment: fixed;
+
 }
 
 body {
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Playfair Display SC', serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
@@ -46,7 +77,8 @@ body {
     padding: 2em 2em 4em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display SC', serif;
     color: #222;
     font-weight: 600;
     line-height: 1.3;
