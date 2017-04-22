@@ -36,7 +36,7 @@
         
         
         <!-- First Photo Grid-->
-  
+<div class="lineups">
 <div class="flip">
     <div class="front">
         <img src="lineups/A1.jpg" alt="" />
@@ -711,6 +711,11 @@
                     trigger: 'hover',
                     axis: 'x'
                 });
+            });
+        
+            $('.flip').each(function(){
+                let height = $(this).find('img').height();
+                $(this).css('height', height + 10);
             });
         </script>
 </body>
