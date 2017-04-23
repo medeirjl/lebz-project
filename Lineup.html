@@ -5,13 +5,11 @@
     <meta charset="utf-8">
     <title>Rashid Final Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
     <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
 
@@ -29,13 +27,13 @@
         <a href="index.html"><h4>Home</h4></a> 
         <a href="Lineup.html"><h4>Lineup Album</h4></a> 
     </nav>
-    
-    <div class="lineups row clearfix">
+ 
     <h2>EDM Festival Lineups:</h2>
-    <p>In Chronological order:</p>
-        
-        
-        <!-- First Photo Grid-->
+    <p>In Chronological order:</p>  
+    
+    
+            <!-- Start of photo album-->
+<div class="lineups row clearfix">
 <div class="lineups">
 <div class="flip">
     <div class="front">
@@ -204,7 +202,8 @@
                                                                              <a href="https://smftampa.com/">smftampa.com/</a>
                                                                         </div>
                                                                     </div>
-<div class="flip">
+<!-- Photos 16-30 --->
+    <div class="flip">
     <div class="front">
         <img src="lineups/A16.jpg" alt="" />
     </div>
@@ -355,8 +354,7 @@
                                                             <h3>What The Festival</h3>
                                                             <h4>Wolf Run Ranch, OR</h4>
                                                             <h4>June 16-19</h4>
-                                                             <a href="whatthefestival.com/">whatthefestival.com/
-</a>
+                                                             <a href="whatthefestival.com/">whatthefestival.com/</a>
                                                         </div>
                                                     </div>
                                                         <div class="flip">
@@ -370,7 +368,7 @@
                                                             </div>
                                                         </div>
 
-                        <!-------------------------------->
+                        <!-- Photos 31-45 --->
 <div class="flip">
     <div class="front">
         <img src="lineups/a31.jpg" alt="" />
@@ -479,7 +477,7 @@
                                                     <h3>Montreal Rock Fest</h3>
                                                     <h4>Montreal, Canada</h4>
                                                     <h4>July 23-24</h4>
-                                                     <a href="">.com</a>
+                                                    <a href="montebellorockfest.com">montebellorockfest.com</a>
                                                 </div>
                                             </div>
                                                     <div class="flip">
@@ -490,7 +488,7 @@
                                                             <h3>Tumble Down</h3>
                                                             <h4>Burlington, VT</h4>
                                                             <h4>July 28-29</h4>
-                                                             <a href="montebellorockfest.com">montebellorockfest.com</a>
+                                                             
                                                         </div>
                                                     </div>
                                                        <div class="flip">
@@ -537,7 +535,8 @@
                                                                              <a href="arisefestival.com">arisefestival.com</a>
                                                                         </div>
                                                                     </div>
-<div class="flip">
+ <!-- Photos 46-60 --->
+    <div class="flip">
     <div class="front">
         <img src="lineups/a46.jpg" alt="" />
     </div>
@@ -688,7 +687,7 @@
                                                             <h3>Resonnance</h3>
                                                             <h4>Legend Valley, OH</h4>
                                                             <h4>September 21-23</h4>
-                                                             <a href="">.com</a>
+                                                             
                                                         </div>
                                                     </div>
                                                         <div class="flip">
@@ -706,12 +705,14 @@
 
      
     </div>
+    </div>    
+ <!-- Flip javascript --->
+    
         <script type="text/javascript" src="flip.js"></script>
         <script>
             $(function() {
                 $(".flip").flip({
                     trigger: 'hover',
-                    axis: 'x'
                 });
             });
         
@@ -720,6 +721,10 @@
                 $(this).css('height', height + 10);
             });
         </script>
+    
+<div id="footer">
+<p> Website by Rashid Atweh, 2017, Vermont Technical College, Williston</p>
+</div> <!--footer-->   
+    
 </body>
-
 </html>    
