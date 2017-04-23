@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rashid Final Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="intro">
+        <h1>Rashid's Final Project!</h1>
+        <h3>An interactive guide to the best Electronic Music Festivals in America!!</h3>
+
+        <p>
+            Welcome to my website, it collects information on a handfull of the best music festivals in the country in one easy to use photo album!
+        </p>
+    </div>
+
+
+    <nav>
+        <a href="index.html"><h4>Home</h4></a> 
+        <a href="Lineup.html"><h4>Lineup Album</h4></a> 
+    </nav>
+        
+    	<script>	
+		$(document).ready(function(){
+			var geocoder = new google.maps.Geocoder();				
+			var myLatLng = new google.maps.LatLng(33.4936111, -117.1475);
+			var mapOptions = {zoom: 8, center: myLatLng, mapTypeId: google.maps.MapTypeId.ROADMAP}
+			var map = new google.maps.Map($("#map").get(0), mapOptions);
+	
+			$("#links a").click(function() {
+				var address = $(this).text();
+				/* create the marker object */
+				geocoder.geocode({address: address}, function(results) {
+			    	new google.maps.Marker({
+				    	position: results[0].geometry.location,
+			    		map: map
+			    	});
+		    	});
+			});
+		});
+    </script>
